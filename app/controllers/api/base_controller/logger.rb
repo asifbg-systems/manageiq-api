@@ -4,7 +4,8 @@ module Api
       def log_request_initiated
         @requested_at = Time.now.utc
         return unless api_log_info?
-        api_log_info(" ")
+        api_log_info("BG Testing Start ")
+        $api_log.info("BG Testing")
         log_request("API Request", :requested_at => @requested_at.to_s,
                                    :method       => request.request_method,
                                    :url          => request.original_url)
