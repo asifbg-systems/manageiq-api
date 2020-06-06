@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = "manageiq-api"
   s.version     = 1.0
   s.authors     = ["ManageIQ Developers"]
-  s.homepage    = "https://github.com/ManageIQ/manageiq-api"
+  s.homepage    = "https://github.com/asifbg-systems/manageiq-api"
   s.summary     = "The ManageIQ Api"
   s.description = "The ManageIQ Api"
   s.licenses    = ["Apache-2.0"]
