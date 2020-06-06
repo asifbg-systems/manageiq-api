@@ -4,8 +4,8 @@ module Api
       def log_request_initiated
         @requested_at = Time.now.utc
         return unless api_log_info?
-        api_log_info("BG Testing Start ")
-        $api_log.info("BG Testing")
+        api_log_info("BG2 Testing Start ")
+        $api_log.info("BG2 Testing")
         log_request("API Request", :requested_at => @requested_at.to_s,
                                    :method       => request.request_method,
                                    :url          => request.original_url)
@@ -65,27 +65,27 @@ module Api
       def api_log_error(msg)
         method = api_get_method_name(caller.first, __method__)
 
-        $api_log.error("BG MIQ(#{self.class.name}.#{method}) #{msg}")
+        $api_log.error("BG2 MIQ(#{self.class.name}.#{method}) #{msg}")
       end
 
       def api_log_debug(msg)
         if api_log_debug?
           method = api_get_method_name(caller.first, __method__)
 
-          $api_log.debug("BG MIQ(#{self.class.name}.#{method}) #{msg}")
+          $api_log.debug("BG2 MIQ(#{self.class.name}.#{method}) #{msg}")
         end
       end
 
       def api_log_info(msg)
         method = api_get_method_name(caller.first, __method__)
 
-        $api_log.info("BG MIQ(#{self.class.name}.#{method}) #{msg}")
+        $api_log.info("BG2 MIQ(#{self.class.name}.#{method}) #{msg}")
       end
 
       def api_log_warn(msg)
         method = api_get_method_name(caller.first, __method__)
 
-        $api_log.warn("BG MIQ(#{self.class.name}.#{method}) #{msg}")
+        $api_log.warn("BG2 MIQ(#{self.class.name}.#{method}) #{msg}")
       end
 
       private
