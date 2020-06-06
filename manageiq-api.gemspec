@@ -6,7 +6,7 @@ require "manageiq/api/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "manageiq-api"
-  s.version     = ManageIQ::Api::VERSION
+  s.version     = 1.0
   s.authors     = ["ManageIQ Developers"]
   s.homepage    = "https://github.com/ManageIQ/manageiq-api"
   s.summary     = "The ManageIQ Api"
