@@ -65,27 +65,27 @@ module Api
       def api_log_error(msg)
         method = api_get_method_name(caller.first, __method__)
 
-        $api_log.error("MIQ(#{self.class.name}.#{method}) #{msg}")
+        $api_log.error("BG MIQ(#{self.class.name}.#{method}) #{msg}")
       end
 
       def api_log_debug(msg)
         if api_log_debug?
           method = api_get_method_name(caller.first, __method__)
 
-          $api_log.debug("MIQ(#{self.class.name}.#{method}) #{msg}")
+          $api_log.debug("BG MIQ(#{self.class.name}.#{method}) #{msg}")
         end
       end
 
       def api_log_info(msg)
         method = api_get_method_name(caller.first, __method__)
 
-        $api_log.info("MIQ(#{self.class.name}.#{method}) #{msg}")
+        $api_log.info("BG MIQ(#{self.class.name}.#{method}) #{msg}")
       end
 
       def api_log_warn(msg)
         method = api_get_method_name(caller.first, __method__)
 
-        $api_log.warn("MIQ(#{self.class.name}.#{method}) #{msg}")
+        $api_log.warn("BG MIQ(#{self.class.name}.#{method}) #{msg}")
       end
 
       private
